@@ -26,6 +26,6 @@
     [Inject]
     public IBugService BugService { get; set; }
 
-    protected override void OnInitialized() => Bugs = BugService.GetBugs().OrderBy(x => x.Priority)
+    protected override void OnInitialized() => Bugs = BugService.GetBugs().OrderBy(x => x.Priority);
 
 }
